@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssm-extract-ufe-viz"
+version = "0.1.0"
+description = "Visual feature differentiation for vision-focused state space models"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scikit-image>=0.22",
+    "Pillow>=10.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+models = [
+    "transformers>=4.39",
+    "huggingface_hub>=0.22",
+]
+vim = [
+    "mamba-ssm==2.2.4",
+]
+lpips = [
+    "lpips>=0.1.4",
+]
+study = [
+    "scikit-learn>=1.4",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "slow: downloads pretrained models or datasets",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
