@@ -1,0 +1,204 @@
+{
+  "config": {
+    "data_dir": "SST-2",
+    "out_dir": "ablation_outputs\\noise_cap_0_80",
+    "epochs": 3,
+    "max_vocab": 8000,
+    "max_len": 32,
+    "emb_dim": 50,
+    "hidden_dim": 64,
+    "batch_size": 128,
+    "lr": 0.003,
+    "train_limit": 20000,
+    "recurrent_norm_cap": 0.8,
+    "embedding_noise_std": 0.03,
+    "weight_decay": 0.0,
+    "augment_attacks": false,
+    "seed": 7
+  },
+  "vocab_size": 8000,
+  "train_size": 20000,
+  "dev_size": 872,
+  "clean_accuracy": 0.7855504587155964,
+  "attacked_accuracy": 0.7717889908256881,
+  "attack_coverage": 0.9988532110091743,
+  "attack_success_rate_over_changed": 0.03788748564867968,
+  "certified_fraction_all": 0.16857798165137614,
+  "certified_robust_accuracy": 0.15711009174311927,
+  "mean_clean_margin": 2.183410460821464,
+  "mean_logit_perturbation_bound": 3.983736870125218,
+  "norm_info": {
+    "wx_norm": 5.958513259887695,
+    "wh_norm": 0.7999998927116394,
+    "wo_norm": 2.562300443649292
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.47397789578437804,
+      "train_accuracy": 0.7583,
+      "dev_loss": 0.46784114837646484,
+      "dev_accuracy": 0.7660550458715596
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.26381621661186216,
+      "train_accuracy": 0.89345,
+      "dev_loss": 0.4439070224761963,
+      "dev_accuracy": 0.7912844036697247
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.20964181382656097,
+      "train_accuracy": 0.9172,
+      "dev_loss": 0.4610283076763153,
+      "dev_accuracy": 0.7855504587155964
+    }
+  ],
+  "examples": [
+    {
+      "text": "it 's a charming and often affecting journey .",
+      "attacked_text": "it ' s a delightful and often affecting journey .",
+      "label": 1,
+      "clean_prob_positive": 0.9936671853065491,
+      "attacked_prob_positive": 0.9928245544433594,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": true,
+      "margin": 5.055652618408203,
+      "logit_perturbation_bound": 4.6413425838971945
+    },
+    {
+      "text": "unflinchingly bleak and desperate",
+      "attacked_text": "ufnlinchingly bleak and desperate",
+      "label": 0,
+      "clean_prob_positive": 0.0013779648579657078,
+      "attacked_prob_positive": 0.0013779648579657078,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": true,
+      "margin": 6.585768699645996,
+      "logit_perturbation_bound": 2.35996507602801
+    },
+    {
+      "text": "allows us to hope that nolan is poised to embark a major career as a commercial yet inventive filmmaker .",
+      "attacked_text": "allows us to hope that nolan is piosed to embark a major career as a commercial yet inventive filmmaker .",
+      "label": 1,
+      "clean_prob_positive": 0.7647849321365356,
+      "attacked_prob_positive": 0.7647849321365356,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 1.179094672203064,
+      "logit_perturbation_bound": 4.622590951406018
+    },
+    {
+      "text": "the acting , costumes , music , cinematography and sound are all astounding given the production 's austere locales .",
+      "attacked_text": "the atcing , costumes , music , cinematography and sound are all astounding given the production ' s austere locales .",
+      "label": 1,
+      "clean_prob_positive": 0.888126015663147,
+      "attacked_prob_positive": 0.8955254554748535,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 2.07174015045166,
+      "logit_perturbation_bound": 3.361799463103448
+    },
+    {
+      "text": "it 's slow -- very , very slow .",
+      "attacked_text": "it ' s sluggish - - very , very slow .",
+      "label": 0,
+      "clean_prob_positive": 0.05690627545118332,
+      "attacked_prob_positive": 0.021873395889997482,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 2.807760000228882,
+      "logit_perturbation_bound": 6.2486228509672355
+    },
+    {
+      "text": "although laced with humor and a few fanciful touches , the film is a refreshingly serious look at young women .",
+      "attacked_text": "atlhough laced with humor and a few fanciful touches , the film is a refreshingly serious look at young women .",
+      "label": 1,
+      "clean_prob_positive": 0.9078643918037415,
+      "attacked_prob_positive": 0.9333146810531616,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 2.2878334522247314,
+      "logit_perturbation_bound": 2.8026264837651547
+    },
+    {
+      "text": "a sometimes tedious film .",
+      "attacked_text": "a smoetimes tedious film .",
+      "label": 0,
+      "clean_prob_positive": 0.03894318640232086,
+      "attacked_prob_positive": 0.07489178329706192,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 3.20592999458313,
+      "logit_perturbation_bound": 6.289334859604116
+    },
+    {
+      "text": "or doing last year 's taxes with your ex-wife .",
+      "attacked_text": "or diong last year ' s taxes with your ex - wife .",
+      "label": 0,
+      "clean_prob_positive": 0.028519757091999054,
+      "attacked_prob_positive": 0.04649851843714714,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 3.528223752975464,
+      "logit_perturbation_bound": 4.25249276000041
+    },
+    {
+      "text": "you do n't have to know about music to appreciate the film 's easygoing blend of comedy and romance .",
+      "attacked_text": "you do n't have to know about music to appreciate the movie ' s easygoing blend of comedy and romance .",
+      "label": 1,
+      "clean_prob_positive": 0.8335123062133789,
+      "attacked_prob_positive": 0.7737130522727966,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 1.6107271909713745,
+      "logit_perturbation_bound": 2.4331695875711095
+    },
+    {
+      "text": "in exactly 89 minutes , most of which passed as slowly as if i 'd been sitting naked on an igloo , formula 51 sank from quirky to jerky to utter turkey .",
+      "attacked_text": "in eaxctly 89 minutes , most of which passed as slowly as if i ' d been sitting naked on an igloo , formula 51 sank from quirky to jerky to utter turkey .",
+      "label": 0,
+      "clean_prob_positive": 0.03510713577270508,
+      "attacked_prob_positive": 0.044186998158693314,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": true,
+      "margin": 3.313612699508667,
+      "logit_perturbation_bound": 2.1644026920515054
+    },
+    {
+      "text": "the mesmerizing performances of the leads keep the film grounded and keep the audience riveted .",
+      "attacked_text": "the msemerizing performances of the leads keep the film grounded and keep the audience riveted .",
+      "label": 1,
+      "clean_prob_positive": 0.9945127964019775,
+      "attacked_prob_positive": 0.9710373282432556,
+      "clean_correct": true,
+      "attacked_correct": true,
+      "certified": false,
+      "margin": 5.19983434677124,
+      "logit_perturbation_bound": 6.368767784008907
+    },
+    {
+      "text": "it takes a strange kind of laziness to waste the talents of robert forster , anne meara , eugene levy , and reginald veljohnson all in the same movie .",
+      "attacked_text": "it takes a srtange kind of laziness to waste the talents of robert forster , anne meara , eugene levy , and reginald veljohnson all in the same movie .",
+      "label": 0,
+      "clean_prob_positive": 0.7640769481658936,
+      "attacked_prob_positive": 0.7972986102104187,
+      "clean_correct": false,
+      "attacked_correct": false,
+      "certified": false,
+      "margin": 1.175162672996521,
+      "logit_perturbation_bound": 1.6378761684060406
+    }
+  ]
+}

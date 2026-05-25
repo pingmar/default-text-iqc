@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="460.0" y="28" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">Attacked Accuracy by Method</text>
+<line x1="190" y1="50" x2="190" y2="330" stroke="#222"/>
+<line x1="190" y1="330" x2="890" y2="330" stroke="#222"/>
+<line x1="190.0" y1="330" x2="190.0" y2="335" stroke="#222"/>
+<text x="190.0" y="352" text-anchor="middle" font-family="Arial" font-size="11">0%</text>
+<line x1="278.5" y1="330" x2="278.5" y2="335" stroke="#222"/>
+<text x="278.5" y="352" text-anchor="middle" font-family="Arial" font-size="11">10%</text>
+<line x1="366.9" y1="330" x2="366.9" y2="335" stroke="#222"/>
+<text x="366.9" y="352" text-anchor="middle" font-family="Arial" font-size="11">20%</text>
+<line x1="455.4" y1="330" x2="455.4" y2="335" stroke="#222"/>
+<text x="455.4" y="352" text-anchor="middle" font-family="Arial" font-size="11">30%</text>
+<line x1="543.9" y1="330" x2="543.9" y2="335" stroke="#222"/>
+<text x="543.9" y="352" text-anchor="middle" font-family="Arial" font-size="11">40%</text>
+<line x1="632.3" y1="330" x2="632.3" y2="335" stroke="#222"/>
+<text x="632.3" y="352" text-anchor="middle" font-family="Arial" font-size="11">50%</text>
+<line x1="720.8" y1="330" x2="720.8" y2="335" stroke="#222"/>
+<text x="720.8" y="352" text-anchor="middle" font-family="Arial" font-size="11">60%</text>
+<line x1="809.2" y1="330" x2="809.2" y2="335" stroke="#222"/>
+<text x="809.2" y="352" text-anchor="middle" font-family="Arial" font-size="11">70%</text>
+<line x1="897.7" y1="330" x2="897.7" y2="335" stroke="#222"/>
+<text x="897.7" y="352" text-anchor="middle" font-family="Arial" font-size="11">80%</text>
+<text x="182" y="91.6" text-anchor="end" font-family="Arial" font-size="12">Standard RNN</text>
+<rect x="190" y="50.0" width="690.9" height="64.0" fill="#8d99ae"/>
+<text x="886.9" y="91.6" font-family="Arial" font-size="12">78.1%</text>
+<text x="182" y="163.6" text-anchor="end" font-family="Arial" font-size="12">Cap 0.60</text>
+<rect x="190" y="122.0" width="681.7" height="64.0" fill="#2f6f9f"/>
+<text x="877.7" y="163.6" font-family="Arial" font-size="12">77.1%</text>
+<text x="182" y="235.6" text-anchor="end" font-family="Arial" font-size="12">Adv emb + local</text>
+<rect x="190" y="194.0" width="691.9" height="64.0" fill="#4f772d"/>
+<text x="887.9" y="235.6" font-family="Arial" font-size="12">78.2%</text>
+<text x="182" y="307.6" text-anchor="end" font-family="Arial" font-size="12">Final 50k</text>
+<rect x="190" y="266.0" width="700.0" height="64.0" fill="#d1495b"/>
+<text x="896.0" y="307.6" font-family="Arial" font-size="12">79.1%</text>
+</svg>

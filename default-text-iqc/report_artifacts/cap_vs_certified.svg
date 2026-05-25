@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="360.0" y="28" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">Certified Robust Accuracy vs Recurrent Norm Cap</text>
+<line x1="70" y1="50" x2="70" y2="360" stroke="#222"/>
+<line x1="70" y1="360" x2="690" y2="360" stroke="#222"/>
+<polyline points="70.0,81.1 295.5,119.6 520.9,235.9 690.0,352.9" fill="none" stroke="#2f6f9f" stroke-width="3"/>
+<circle cx="70.0" cy="81.1" r="4" fill="#d1495b"/>
+<text x="70.0" y="72.1" text-anchor="middle" font-family="Arial" font-size="11">44.8%</text>
+<text x="70.0" y="382" text-anchor="middle" font-family="Arial" font-size="11">0.40</text>
+<circle cx="295.5" cy="119.6" r="4" fill="#d1495b"/>
+<text x="295.5" y="110.6" text-anchor="middle" font-family="Arial" font-size="11">38.6%</text>
+<text x="295.5" y="382" text-anchor="middle" font-family="Arial" font-size="11">0.60</text>
+<circle cx="520.9" cy="235.9" r="4" fill="#d1495b"/>
+<text x="520.9" y="226.9" text-anchor="middle" font-family="Arial" font-size="11">20.0%</text>
+<text x="520.9" y="382" text-anchor="middle" font-family="Arial" font-size="11">0.80</text>
+<circle cx="690.0" cy="352.9" r="4" fill="#d1495b"/>
+<text x="690.0" y="343.9" text-anchor="middle" font-family="Arial" font-size="11">1.1%</text>
+<text x="690.0" y="382" text-anchor="middle" font-family="Arial" font-size="11">0.95</text>
+<text x="360.0" y="406" text-anchor="middle" font-family="Arial" font-size="12">Recurrent norm cap</text>
+</svg>

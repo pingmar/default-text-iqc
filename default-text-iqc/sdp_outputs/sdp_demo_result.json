@@ -1,0 +1,31 @@
+{
+  "lower_logit_bound": 0.11038031900606718,
+  "upper_logit_bound": 0.16366639202215302,
+  "lower_status": "optimal",
+  "upper_status": "optimal",
+  "certified": true,
+  "sdp_variables": 73,
+  "moment_matrix_shape": [
+    73,
+    73
+  ],
+  "example_index": 0,
+  "text": "it 's a charming and often affecting journey .",
+  "attacked_text": "it ' s a delightful and often affecting journey .",
+  "attack_changed_text": true,
+  "label": 1,
+  "full_model_clean_logit": 6.024190902709961,
+  "full_model_clean_prediction": 1,
+  "reduced_model_clean_logit": 0.13710122955211107,
+  "seq_len": 4,
+  "emb_dim": 6,
+  "hidden_dim": 6,
+  "eps_per_token": [
+    0.02580421231687069,
+    0.02580421231687069,
+    0.02580421231687069,
+    0.02580421231687069
+  ],
+  "solver": "SCS",
+  "formulation": "Lifted moment-matrix SDP relaxation with input L2 balls, lifted affine RNN dynamics, hidden-state bounds, and bounded-sector tanh quadratic constraints."
+}
